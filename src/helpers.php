@@ -24,8 +24,6 @@ if (! function_exists('smart_info')) {
      *                          collection, model, or any normalizable object.
      * @param  mixed  $context  Additional context data to include with the log
      *                          entry. Supports complex/nested structures.
-     *
-     * @return void
      */
     function smart_info($message, $context = []): void
     {

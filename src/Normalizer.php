@@ -13,7 +13,7 @@ class Normalizer
     /**
      * Normalize message/context into scalar/array structures.
      *
-     * @param mixed $item
+     * @param  mixed  $item
      * @return mixed
      */
     public static function normalize($item)
@@ -49,19 +49,20 @@ class Normalizer
             return self::normalize($item->jsonSerialize());
         }
 
-        // Traversable / iterators
-        if ($item instanceof Traversable) {
-            return self::normalize(iterator_to_array($item));
-        }
-
-        // WeakMap
+        // WeakMap: convert values to a numeric array, ignore object keys
         if ($item instanceof WeakMap) {
             $array = [];
-            foreach ($item as $key => $value) {
-                $array[$key] = self::normalize($value);
+
+            foreach ($item as $value) {
+                $array[] = self::normalize($value);
             }
 
             return $array;
+        }
+
+        // Traversable / iterators (but not WeakMap, which is handled above)
+        if ($item instanceof Traversable) {
+            return self::normalize(iterator_to_array($item));
         }
 
         // Fallback: turn public properties into array and normalize them

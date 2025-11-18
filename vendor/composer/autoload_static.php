@@ -171,6 +171,8 @@ class ComposerStaticInitbc94487f9dc88fb24ccb1f6cd36c7712
             'Doctrine\\Common\\Lexer\\' => 22,
             'Dflydev\\DotAccessData\\' => 22,
             'DeepCopy\\' => 9,
+            'Database\\Seeders\\' => 17,
+            'Database\\Factories\\' => 19,
         ),
         'C' => 
         array (
@@ -185,6 +187,8 @@ class ComposerStaticInitbc94487f9dc88fb24ccb1f6cd36c7712
         ),
         'A' => 
         array (
+            'App\\' => 4,
+            'AkhilDuggirala\\LaravelLogEnhancer\\Tests\\' => 40,
             'AkhilDuggirala\\LaravelLogEnhancer\\' => 34,
         ),
     );
@@ -511,6 +515,14 @@ class ComposerStaticInitbc94487f9dc88fb24ccb1f6cd36c7712
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
         ),
+        'Database\\Seeders\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravel/pint/database/seeders',
+        ),
+        'Database\\Factories\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravel/pint/database/factories',
+        ),
         'Cron\\' => 
         array (
             0 => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron',
@@ -530,6 +542,14 @@ class ComposerStaticInitbc94487f9dc88fb24ccb1f6cd36c7712
         'Brick\\Math\\' => 
         array (
             0 => __DIR__ . '/..' . '/brick/math/src',
+        ),
+        'App\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravel/pint/app',
+        ),
+        'AkhilDuggirala\\LaravelLogEnhancer\\Tests\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/tests',
         ),
         'AkhilDuggirala\\LaravelLogEnhancer\\' => 
         array (
